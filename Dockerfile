@@ -16,4 +16,4 @@ EXPOSE 7860
 # dry run
 RUN which python
 
-ENTRYPOINT ["/usr/local/bin/python","launch.py","--enable-insecure-extension-access"]
+ENTRYPOINT ["/opt/conda/bin/python","launch.py","--enable-insecure-extension-access"]
