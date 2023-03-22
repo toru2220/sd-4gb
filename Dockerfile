@@ -8,11 +8,6 @@ WORKDIR /content/
 
 RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
-WORKDIR /content/stable-diffusion-webui/models/Stable-diffusion/
-
-RUN wget https://civitai.com/api/download/models/11745 -O Chilloutmix-Ni-pruned-fp32-fix.safetensors && \
-    wget https://civitai.com/api/download/models/16793 -O Tifa_meenow.safetensors
-
 WORKDIR /content/stable-diffusion-webui/
 
 ENV COMMANDLINE_ARGS="--medvram --opt-split-attention"
