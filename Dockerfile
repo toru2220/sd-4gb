@@ -1,7 +1,9 @@
 FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
 
 RUN apt update && \
-    apt install -y --no-install-recommends git wget libgl1-mesa-dev libglib2.0-0 libopencv-dev 
+    apt install -y --no-install-recommends git wget
+
+RUN apt install -y --no-install-recommends libgl1-mesa-dev libglib2.0-0 libopencv-dev 
 
 WORKDIR /content/
 
