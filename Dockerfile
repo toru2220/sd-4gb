@@ -17,4 +17,6 @@ WORKDIR /content/stable-diffusion-webui/
 
 ENV COMMANDLINE_ARGS="--medvram --opt-split-attention"
 
+EXPOSE 7860
+
 ENTRYPOINT ["usr/local/bin/python","launch.py","--enable-insecure-extension-access"]
